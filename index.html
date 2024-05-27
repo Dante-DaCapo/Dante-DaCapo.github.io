@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title> Main Page </title>
+  <script>
+    function switchPage(toHideClassName, toShowClassName) {
+      var toHide = document.getElementById(toHideClassName);
+      let toShow = document.getElementById(toShowClassName);
+      let body = document.body;
+      toHide.style.display = "none";
+      toShow.style.display = "flex";
+      if(toHideClassName === "pro") {
+        body.style.backgroundColor = "#001219";
+        body.style.color= "#edf2f4";
+      } else {
+        body.style.backgroundColor = "#edf2f4";
+        body.style.color= "#001219";
+      }
+    }
+  </script>
+
+</head>
+<body>
+  
+  <div id="pro" class="description-professional">
+      <div class="left-section">
+        <div class="avatar-section">
+          <img class="avatar-pro" width=250 height=250 src="https://media.licdn.com/dms/image/C4E03AQEAPqBojZFGiA/profile-displayphoto-shrink_400_400/0/1626028044516?e=1721865600&v=beta&t=eRTbX5oa-3F1GxniNfFqOzetgHQhGseLEDTDXfB0Ppo"/>
+        </div>
+      </div>
+      
+      <div class="right-section">
+          <h1> Hello, I am Nathan (aka <span class="name-switcher" onclick="switchPage('pro', 'perso')">Dante</span>)<br>
+            and I am a Software Engineer.</h1>
+        
+          <div class="sub-description">  
+            <p>
+              Backend enthusiast. Eager to learn and to create.<br>
+              Passed through Python, C... to arrive to Typescript.<br>
+              Ex neovim. Now (newbie ((Doom) Emacs (user . (Still learning it)))). 
+            </p>
+          </div>
+        <div class="sub-description-links">
+          <div class="link">
+            <img src=" https://img.icons8.com/?size=100&id=13930&format=png&color=000000" height=40 width=40> 
+            <a target="_blank" href="https://www.linkedin.com/in/nathan-savina/">LinkedIn</a> 
+          </div>
+          <div class="link">
+            <img src="https://img.icons8.com/?size=100&id=118553&format=png&color=000000" height=40 width=40> 
+            <a target="_blank" href="https://github.com/Dante-DaCapo">GitHub</a> 
+            </a> 
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+
+  <div id="perso" class="description-personnal">
+      <div class="left-section">
+        <div class="avatar-section">
+          <img class="avatar-perso" width=250 height=250 src="https://avatars.githubusercontent.com/u/33951178?v=4"/>
+        </div>
+      </div>
+
+      <div class="right-section">
+          <h1> Hello, I am Dante (aka <span class="name-switcher" onclick="switchPage('perso', 'pro')">Nathan</span>)<br>
+              and I am a nerd.</h1>
+
+          <div class="sub-description">  
+            <p>
+              Passionate Gamer, Space fascinated, avid books and comics reader.<br>
+              Drummer and heavy metal listener 🤘<br>
+              "The Sky calls to us" - Carl Sagan
+            </p>
+          </div>
+
+        <div class="sub-description-links">
+          <div class="link">
+            <img src="https://img.icons8.com/?size=100&id=lwKOhoracwuv&format=png&color=000000" height=40 width=40> 
+            <a target="_blank" href="https://account.xbox.com/fr-fr/profile?gamertag=Dante%2BDaCapo">Xbox</a> 
+          </div>
+          <div class="link">
+            <img src="https://img.icons8.com/?size=100&id=zNqjI8XKkCv0&format=png&color=000000" height=40 width=40> 
+            <a target="_blank" href="https://steamcommunity.com/profiles/76561198107326751">Steam</a> 
+            </a> 
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+</body>
+</html>
